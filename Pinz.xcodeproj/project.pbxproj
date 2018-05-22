@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F3B989E20B4971800E91699 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3B989D20B4971800E91699 /* ProfileViewController.swift */; };
+		3F3B98A020B49DF900E91699 /* PinDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3B989F20B49DF900E91699 /* PinDetailsViewController.swift */; };
 		417AABE7207EDDAC0044DB60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417AABE6207EDDAC0044DB60 /* AppDelegate.swift */; };
 		417AABE9207EDDAC0044DB60 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417AABE8207EDDAC0044DB60 /* MapViewController.swift */; };
 		417AABEC207EDDAC0044DB60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 417AABEA207EDDAC0044DB60 /* Main.storyboard */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F3B989D20B4971800E91699 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		3F3B989F20B49DF900E91699 /* PinDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinDetailsViewController.swift; sourceTree = "<group>"; };
 		417AABE3207EDDAC0044DB60 /* Pinz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pinz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		417AABE6207EDDAC0044DB60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		417AABE8207EDDAC0044DB60 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -41,6 +45,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F3B989B20B4929A00E91699 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				417AABF8207EDEAB0044DB60 /* Pin.swift */,
+				417AABFC207F16000044DB60 /* Location.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		3F3B989C20B492BA00E91699 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				417AABE8207EDDAC0044DB60 /* MapViewController.swift */,
+				3F3B989D20B4971800E91699 /* ProfileViewController.swift */,
+				417AABFA207F148A0044DB60 /* ListPinsTableViewController.swift */,
+				3F3B989F20B49DF900E91699 /* PinDetailsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		417AABDA207EDDAC0044DB60 = {
 			isa = PBXGroup;
 			children = (
@@ -60,11 +84,9 @@
 		417AABE5207EDDAC0044DB60 /* Pinz */ = {
 			isa = PBXGroup;
 			children = (
-				417AABF8207EDEAB0044DB60 /* Pin.swift */,
-				417AABFC207F16000044DB60 /* Location.swift */,
 				417AABE6207EDDAC0044DB60 /* AppDelegate.swift */,
-				417AABE8207EDDAC0044DB60 /* MapViewController.swift */,
-				417AABFA207F148A0044DB60 /* ListPinsTableViewController.swift */,
+				3F3B989B20B4929A00E91699 /* Data */,
+				3F3B989C20B492BA00E91699 /* ViewControllers */,
 				417AABEA207EDDAC0044DB60 /* Main.storyboard */,
 				417AABEF207EDDAC0044DB60 /* LaunchScreen.storyboard */,
 				417AABF2207EDDAC0044DB60 /* Info.plist */,
@@ -145,6 +167,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F3B98A020B49DF900E91699 /* PinDetailsViewController.swift in Sources */,
+				3F3B989E20B4971800E91699 /* ProfileViewController.swift in Sources */,
 				417AABF9207EDEAB0044DB60 /* Pin.swift in Sources */,
 				417AABE9207EDDAC0044DB60 /* MapViewController.swift in Sources */,
 				417AABFD207F16000044DB60 /* Location.swift in Sources */,
