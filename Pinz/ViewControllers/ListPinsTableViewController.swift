@@ -10,7 +10,7 @@ import UIKit
 
 class ListPinsTableViewController: UITableViewController {
     
-    var pins: [Pin] = [Pin(title: "Pin 1", description: "Description", location: Location(longitude: 123.23, latitude: 123.23)), Pin(title: "Pin 2", description: "Description", location: Location(longitude: 123.23, latitude: 123.23)), Pin(title: "Pin 3", description: "Description", location: Location(longitude: 123.23, latitude: 123.23))]
+    var pins: [Pin] = [Pin(title: "Pin 1", description: "Description", location: Location(longitude: 123.23, latitude: 123.23)), Pin(title: "Pin 2", description: "Description sdf asd fasd fasdfasdf asdf asdf asdf asdf asd fasd fasdf asdfasd fasdf asd fasd fasd f asdf asdf asdf a", location: Location(longitude: 123.23, latitude: 123.23)), Pin(title: "Pin 3", description: "Description", location: Location(longitude: 123.23, latitude: 123.23))]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -103,11 +103,11 @@ class ListPinsTableViewController: UITableViewController {
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let destination = segue.destination as? PinDetailsViewController {
-            destination.pin = pins[(tableView.indexPathForSelectedRow?.row)!]
+        if segue.identifier == "ToDetails" {
+            let indexPath = tableView.indexPathForSelectedRow!
+            let pin = pins[indexPath.row]
+            let destinationVC = segue.destination as! PinDetailsTableViewController
+            destinationVC.pin = pin
         }
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
     }
-
 }

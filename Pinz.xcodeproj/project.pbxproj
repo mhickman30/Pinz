@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		3F3B989E20B4971800E91699 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3B989D20B4971800E91699 /* ProfileViewController.swift */; };
-		3F3B98A020B49DF900E91699 /* PinDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3B989F20B49DF900E91699 /* PinDetailsViewController.swift */; };
+		3F3B98A220B4A4B700E91699 /* PinDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3B98A120B4A4B700E91699 /* PinDetailsTableViewController.swift */; };
+		3F3B98A420B4AF4700E91699 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F3B98A320B4AF4700E91699 /* Assets.xcassets */; };
 		417AABE7207EDDAC0044DB60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417AABE6207EDDAC0044DB60 /* AppDelegate.swift */; };
 		417AABE9207EDDAC0044DB60 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417AABE8207EDDAC0044DB60 /* MapViewController.swift */; };
 		417AABEC207EDDAC0044DB60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 417AABEA207EDDAC0044DB60 /* Main.storyboard */; };
-		417AABEE207EDDAC0044DB60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 417AABED207EDDAC0044DB60 /* Assets.xcassets */; };
 		417AABF1207EDDAC0044DB60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 417AABEF207EDDAC0044DB60 /* LaunchScreen.storyboard */; };
 		417AABF9207EDEAB0044DB60 /* Pin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417AABF8207EDEAB0044DB60 /* Pin.swift */; };
 		417AABFB207F148A0044DB60 /* ListPinsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417AABFA207F148A0044DB60 /* ListPinsTableViewController.swift */; };
@@ -21,12 +21,12 @@
 
 /* Begin PBXFileReference section */
 		3F3B989D20B4971800E91699 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		3F3B989F20B49DF900E91699 /* PinDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinDetailsViewController.swift; sourceTree = "<group>"; };
+		3F3B98A120B4A4B700E91699 /* PinDetailsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinDetailsTableViewController.swift; sourceTree = "<group>"; };
+		3F3B98A320B4AF4700E91699 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../.Trash/Assets.xcassets; sourceTree = "<group>"; };
 		417AABE3207EDDAC0044DB60 /* Pinz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pinz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		417AABE6207EDDAC0044DB60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		417AABE8207EDDAC0044DB60 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		417AABEB207EDDAC0044DB60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		417AABED207EDDAC0044DB60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		417AABF0207EDDAC0044DB60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		417AABF2207EDDAC0044DB60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		417AABF8207EDEAB0044DB60 /* Pin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pin.swift; sourceTree = "<group>"; };
@@ -60,7 +60,7 @@
 				417AABE8207EDDAC0044DB60 /* MapViewController.swift */,
 				3F3B989D20B4971800E91699 /* ProfileViewController.swift */,
 				417AABFA207F148A0044DB60 /* ListPinsTableViewController.swift */,
-				3F3B989F20B49DF900E91699 /* PinDetailsViewController.swift */,
+				3F3B98A120B4A4B700E91699 /* PinDetailsTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -89,8 +89,8 @@
 				3F3B989C20B492BA00E91699 /* ViewControllers */,
 				417AABEA207EDDAC0044DB60 /* Main.storyboard */,
 				417AABEF207EDDAC0044DB60 /* LaunchScreen.storyboard */,
+				3F3B98A320B4AF4700E91699 /* Assets.xcassets */,
 				417AABF2207EDDAC0044DB60 /* Info.plist */,
-				417AABED207EDDAC0044DB60 /* Assets.xcassets */,
 			);
 			path = Pinz;
 			sourceTree = "<group>";
@@ -155,7 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				417AABF1207EDDAC0044DB60 /* LaunchScreen.storyboard in Resources */,
-				417AABEE207EDDAC0044DB60 /* Assets.xcassets in Resources */,
+				3F3B98A420B4AF4700E91699 /* Assets.xcassets in Resources */,
 				417AABEC207EDDAC0044DB60 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -167,10 +167,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F3B98A020B49DF900E91699 /* PinDetailsViewController.swift in Sources */,
 				3F3B989E20B4971800E91699 /* ProfileViewController.swift in Sources */,
 				417AABF9207EDEAB0044DB60 /* Pin.swift in Sources */,
 				417AABE9207EDDAC0044DB60 /* MapViewController.swift in Sources */,
+				3F3B98A220B4A4B700E91699 /* PinDetailsTableViewController.swift in Sources */,
 				417AABFD207F16000044DB60 /* Location.swift in Sources */,
 				417AABE7207EDDAC0044DB60 /* AppDelegate.swift in Sources */,
 				417AABFB207F148A0044DB60 /* ListPinsTableViewController.swift in Sources */,
