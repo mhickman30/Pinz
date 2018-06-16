@@ -41,6 +41,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		410B957E20A3A57600C728E3 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				417AABFC207F16000044DB60 /* Location.swift */,
+				417AABF8207EDEAB0044DB60 /* Pin.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		410B957F20A3A58E00C728E3 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				417AABE8207EDDAC0044DB60 /* MapViewController.swift */,
+				417AABFA207F148A0044DB60 /* ListPinsTableViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		417AABDA207EDDAC0044DB60 = {
 			isa = PBXGroup;
 			children = (
@@ -60,15 +78,13 @@
 		417AABE5207EDDAC0044DB60 /* Pinz */ = {
 			isa = PBXGroup;
 			children = (
-				417AABF8207EDEAB0044DB60 /* Pin.swift */,
-				417AABFC207F16000044DB60 /* Location.swift */,
 				417AABE6207EDDAC0044DB60 /* AppDelegate.swift */,
-				417AABE8207EDDAC0044DB60 /* MapViewController.swift */,
-				417AABFA207F148A0044DB60 /* ListPinsTableViewController.swift */,
 				417AABEA207EDDAC0044DB60 /* Main.storyboard */,
+				410B957E20A3A57600C728E3 /* Data */,
+				410B957F20A3A58E00C728E3 /* ViewControllers */,
 				417AABEF207EDDAC0044DB60 /* LaunchScreen.storyboard */,
-				417AABF2207EDDAC0044DB60 /* Info.plist */,
 				417AABED207EDDAC0044DB60 /* Assets.xcassets */,
+				417AABF2207EDDAC0044DB60 /* Info.plist */,
 			);
 			path = Pinz;
 			sourceTree = "<group>";
