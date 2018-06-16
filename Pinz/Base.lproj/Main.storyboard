@@ -6,11 +6,12 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Map-->
         <scene sceneID="vZK-c3-SA2">
             <objects>
                 <viewController id="PO2-OP-CM6" customClass="MapViewController" customModule="Pinz" customModuleProvider="target" sceneMemberID="viewController">
@@ -20,11 +21,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="mSp-FX-Sbe"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="D8z-z6-YRz"/>
+                    <tabBarItem key="tabBarItem" title="Map" image="icons8-marker-50" id="D8z-z6-YRz"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rdm-xc-rNI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1804" y="2069"/>
+            <point key="canvasLocation" x="28" y="2866"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="62Q-DR-mhk">
@@ -42,6 +43,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="ASF-X4-0xP" kind="show" identifier="ToDetails" id="b7G-Fe-fq8"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -91,5 +95,64 @@
             </objects>
             <point key="canvasLocation" x="982" y="2070"/>
         </scene>
+        <!--List-->
+        <scene sceneID="FwW-Ka-5MH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Zqf-4W-cOS" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="List" image="icons8-bulleted-list-50" id="h0n-EJ-HjU"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="5WQ-nA-tuW">
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Ypl-fc-WIS" kind="relationship" relationship="rootViewController" id="dzM-Eh-pJS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qaG-GG-6v0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="982" y="2867"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="02x-ir-bkw">
+            <objects>
+                <viewController id="jIj-Ik-yjE" customClass="ProfileViewController" customModule="Pinz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xLS-kt-7id">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="oKD-ed-ek2"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Profile" largeTitleDisplayMode="always" id="u4U-pU-aVE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sst-Kv-fkI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2674" y="2866"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="IZ6-Ah-Vmj">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dA3-kV-o8T" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Profile" image="icons8-male-user-50" id="6UV-li-7w4"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="tDk-VE-DkJ">
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="jIj-Ik-yjE" kind="relationship" relationship="rootViewController" id="bUb-G5-AfS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Em5-LZ-fYG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1868.8" y="2865.9670164917543"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="icons8-bulleted-list-50" width="50" height="50"/>
+        <image name="icons8-male-user-50" width="50" height="50"/>
+        <image name="icons8-marker-50" width="50" height="50"/>
+    </resources>
 </document>
